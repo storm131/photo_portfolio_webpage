@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->s
+    <header>
+        <h1>Photography by [Photographer's Name]</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to My Photography Portfolio</h2>
+        <p>Capturing moments that last a lifetime. Discover my work below.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Sample images from Unsplash (works if you have an active internet connection) -->
+            <img src="https://source.unsplash.com/800x600/?nature,photography" alt="Nature Photography">
+            <img src="https://source.unsplash.com/800x600/?portrait,photography" alt="Portrait Photography">
+            <img src="https://source.unsplash.com/800x600/?city,photography" alt="City Photography">
+            <img src="https://source.unsplash.com/800x600/?wildlife,photography" alt="Wildlife Photography">
+            <img src="https://source.unsplash.com/800x600/?landscape,photography" alt="Landscape Photography">
+            <img src="https://source.unsplash.com/800x600/?wedding,photography" alt="Wedding Photography">
+        </div>
+    </section> 
+
+    <!-- Packages Section -->
+    <section id="packages">
+        <h2>Packages</h2>
+        <div class="package-list">
+            <div class="package">
+                <h3>Basic Package</h3>
+                <p>Perfect for small events or portrait sessions. Includes 2 hours of shooting and 10 edited photos.</p>
+                <p>Price: $200</p>
+            </div>
+            <div class="package">
+                <h3>Standard Package</h3>
+                <p>Great for events or family photoshoots. Includes 4 hours of shooting and 20 edited photos.</p>
+                <p>Price: $400</p>
+            </div>
+            <div class="package">
+                <h3>Premium Package</h3>
+                <p>Ideal for weddings or large events. Includes full-day coverage and 50 edited photos.</p>
+                <p>Price: $800</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="package">Select Package:</label>
+            <select id="package" name="package">
+                <option value="basic">Basic Package</option>
+                <option value="standard">Standard Package</option>
+                <option value="premium">Premium Package</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
